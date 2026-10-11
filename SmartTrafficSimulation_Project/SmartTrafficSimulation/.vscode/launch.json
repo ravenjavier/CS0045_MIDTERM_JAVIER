@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Smart Traffic",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/smart_traffic.exe",
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "preLaunchTask": "Build Smart Traffic - Windows MinGW"
+    }
+  ]
+}

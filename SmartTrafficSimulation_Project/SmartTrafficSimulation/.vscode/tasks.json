@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Smart Traffic - Linux",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++11",
+        "-Wall",
+        "-Wextra",
+        "${workspaceFolder}/main.cpp",
+        "-o",
+        "${workspaceFolder}/smart_traffic",
+        "-lGL",
+        "-lGLU",
+        "-lglut"
+      ],
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Build Smart Traffic - Windows MinGW",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++11",
+        "-Wall",
+        "-Wextra",
+        "${workspaceFolder}/main.cpp",
+        "-o",
+        "${workspaceFolder}/smart_traffic.exe",
+        "-lfreeglut",
+        "-lopengl32",
+        "-lglu32"
+      ],
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
